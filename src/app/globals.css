@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-navy: #0c1830;
+  --color-navy-mid: #1a2a4a;
+  --color-orange: #e07028;
+  --color-orange-hover: #c45d1c;
+  --color-paper: #f1ebe3;
+  --color-paper-deep: #e8dfd3;
+  --color-ink: #1a1612;
+  --color-muted: #6b635a;
+  --color-line: #d4cbc0;
+  --color-surface: #f1ebe3;
+  --color-surface-raised: #faf7f2;
+  --font-sans: var(--font-serif-face);
+  --font-display: var(--font-serif-face);
+  --font-serif: var(--font-serif-face);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: "Times New Roman", Times, var(--font-serif), serif;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-orange) 30%, white);
+  color: var(--color-navy);
+}
+
+.rule-accent {
+  width: 3rem;
+  height: 1px;
+  background: var(--color-orange);
+}
