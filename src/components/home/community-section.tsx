@@ -8,7 +8,7 @@ export function CommunitySection() {
       <div className="mx-auto grid max-w-6xl gap-0 lg:grid-cols-2">
         <div className="relative min-h-[360px]">
           <Image
-            src="/images/campus/young-learner.jpg"
+            src="/images/campus/pupil-backpack.jpg"
             alt="African schoolboy ready for class with backpack"
             fill
             className="object-cover"
