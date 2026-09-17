@@ -8,7 +8,7 @@ export function StorySection() {
         <div className="relative min-h-[420px] lg:min-h-full">
           <Image
             src="/images/campus/student-laptop.jpg"
-            alt="African student focused on online learning"
+            alt="African schoolboy reading in class"
             fill
             className="object-cover"
             sizes="(max-width: 1024px) 100vw, 50vw"

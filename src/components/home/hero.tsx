@@ -41,7 +41,7 @@ export function Hero() {
       <div className="relative min-h-[70vh] w-full sm:min-h-[78vh]">
         <Image
           src="/images/campus/hero-collaboration.jpg"
-          alt="African learners collaborating on laptops in a modern classroom"
+          alt="African pupils studying and drawing together at school"
           fill
           priority
           className="object-cover"
@@ -68,7 +68,7 @@ export function Hero() {
         <div className="relative min-h-[420px]">
           <Image
             src="/images/campus/student-laptop.jpg"
-            alt="African student studying online with a laptop"
+            alt="African schoolboy reading a textbook by the classroom window"
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 50vw"
