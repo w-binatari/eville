@@ -20,8 +20,7 @@ const moments: ClassMoment[] = [
     title: "Junior Secondary",
     subtitle: "JSS 1–3 · Curious minds, first big steps",
     href: "/programs#secondary",
-    poster:
-      "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1200&q=80",
+    poster: "/images/campus/elearning-session.jpg",
     // Placeholder clip: swap for real classroom footage from the academy
     video:
       "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
@@ -31,8 +30,7 @@ const moments: ClassMoment[] = [
     title: "Senior Secondary",
     subtitle: "SS 1–3 · Exam-ready, future-facing",
     href: "/programs#secondary",
-    poster:
-      "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=1200&q=80",
+    poster: "/images/campus/young-learner.jpg",
     video:
       "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
   },
@@ -41,8 +39,7 @@ const moments: ClassMoment[] = [
     title: "Tertiary & Diplomas",
     subtitle: "Skills with weight in the real world",
     href: "/programs#tertiary",
-    poster:
-      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=80",
+    poster: "/images/campus/professional-team.jpg",
     video:
       "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
   },
@@ -51,8 +48,7 @@ const moments: ClassMoment[] = [
     title: "Professional Courses",
     subtitle: "Data, design, tech, built for careers",
     href: "/programs#professional",
-    poster:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80",
+    poster: "/images/campus/professional-portrait.jpg",
     video:
       "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
   },

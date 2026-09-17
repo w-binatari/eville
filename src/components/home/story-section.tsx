@@ -7,8 +7,8 @@ export function StorySection() {
       <div className="mx-auto grid max-w-6xl lg:grid-cols-2">
         <div className="relative min-h-[420px] lg:min-h-full">
           <Image
-            src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1600&q=80"
-            alt="Student focused on learning"
+            src="/images/campus/student-laptop.jpg"
+            alt="African student focused on online learning"
             fill
             className="object-cover"
             sizes="(max-width: 1024px) 100vw, 50vw"

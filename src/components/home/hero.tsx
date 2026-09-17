@@ -40,8 +40,8 @@ export function Hero() {
 
       <div className="relative min-h-[70vh] w-full sm:min-h-[78vh]">
         <Image
-          src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=2400&q=80"
-          alt="Learners collaborating"
+          src="/images/campus/hero-collaboration.jpg"
+          alt="African learners collaborating on laptops in a modern classroom"
           fill
           priority
           className="object-cover"
@@ -67,8 +67,8 @@ export function Hero() {
       <div className="grid md:grid-cols-2">
         <div className="relative min-h-[420px]">
           <Image
-            src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1600&q=80"
-            alt="Student studying"
+            src="/images/campus/student-laptop.jpg"
+            alt="African student studying online with a laptop"
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 50vw"
