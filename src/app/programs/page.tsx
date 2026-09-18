@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/layout/page-hero";
+import { CoursesReveal } from "@/components/programs/courses-reveal";
 import { SubjectsReveal } from "@/components/programs/subjects-reveal";
 import { ButtonLink } from "@/components/ui/button-link";
 import {
   degreePathways,
   diplomaPrograms,
-  professionalCourses,
   secondaryLevels,
 } from "@/lib/site";
 
@@ -95,15 +95,10 @@ export default function ProgramsPage() {
       <section id="professional" className="mx-auto max-w-6xl scroll-mt-28 px-4 py-16 sm:px-6 lg:py-20">
         <h2 className="font-serif text-3xl text-navy">Professional courses</h2>
         <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-muted">
-          Short, career-focused certifications for the modern workforce.
+          Short, career-focused certifications for the modern workforce. Hover or tap a course to
+          see the craft behind it.
         </p>
-        <ul className="mt-10 grid gap-x-8 gap-y-3 sm:grid-cols-2 lg:grid-cols-3">
-          {professionalCourses.map((course) => (
-            <li key={course} className="border-t border-line pt-3 font-medium text-navy">
-              {course}
-            </li>
-          ))}
-        </ul>
+        <CoursesReveal />
         <div className="mt-12">
           <ButtonLink href="/admissions">Enquire about enrolment</ButtonLink>
         </div>

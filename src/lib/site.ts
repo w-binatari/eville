@@ -245,13 +245,43 @@ export const diplomaPrograms = [
 ];
 
 export const professionalCourses = [
-  "Data Analytics",
-  "Project Management",
-  "Digital Marketing",
-  "Graphic Design",
-  "Artificial Intelligence",
-  "Cybersecurity",
-];
+  {
+    title: "Data Analytics",
+    image: "/images/courses/data-analytics.jpg",
+    alt: "Laptop dashboard showing analytics charts and bounce-rate metrics",
+    blurb: "Turn raw numbers into decisions with charts, trends, and insight.",
+  },
+  {
+    title: "Project Management",
+    image: "/images/courses/project-management.jpg",
+    alt: "Team planning with notes, diagrams, and laptops on a desk",
+    blurb: "Plan, lead, and deliver work with clarity from kickoff to close.",
+  },
+  {
+    title: "Digital Marketing",
+    image: "/images/courses/digital-marketing.jpg",
+    alt: "Laptop screen showing a marketing analytics dashboard",
+    blurb: "Reach audiences online with campaigns grounded in performance data.",
+  },
+  {
+    title: "Graphic Design",
+    image: "/images/courses/graphic-design.jpg",
+    alt: "Design desk with color swatches, tablet, and stylus",
+    blurb: "Shape visual stories with color, layout, and craft.",
+  },
+  {
+    title: "Artificial Intelligence",
+    image: "/images/courses/artificial-intelligence.jpg",
+    alt: "Abstract 3D graphic of the letters AI amid neural pathways",
+    blurb: "Build fluency with models, automation, and intelligent systems.",
+  },
+  {
+    title: "Cybersecurity",
+    image: "/images/courses/cybersecurity.jpg",
+    alt: "Glowing circuit schematic representing digital security systems",
+    blurb: "Protect systems, data, and people in an always-connected world.",
+  },
+] as const;
 
 export const degreePathways = [
   "Undergraduate preparation",
