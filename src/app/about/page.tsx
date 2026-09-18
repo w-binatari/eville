@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
+import { ValuesReveal } from "@/components/about/values-reveal";
 import { PageHero } from "@/components/layout/page-hero";
-import { coreValues, site } from "@/lib/site";
+import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -63,13 +64,10 @@ export default function AboutPage() {
 
         <div className="mt-20">
           <h2 className="font-serif text-3xl text-navy">What we stand for</h2>
-          <ul className="mt-8 grid gap-x-8 gap-y-4 sm:grid-cols-2 lg:grid-cols-4">
-            {coreValues.map((value) => (
-              <li key={value} className="border-t border-line pt-4 text-[15px] font-medium text-navy">
-                {value}
-              </li>
-            ))}
-          </ul>
+          <p className="mt-3 max-w-xl text-[15px] leading-relaxed text-muted">
+            Hover or tap each value to see the learners it lives through.
+          </p>
+          <ValuesReveal />
         </div>
 
         <p className="mt-20 text-center font-serif text-2xl text-navy md:text-3xl">

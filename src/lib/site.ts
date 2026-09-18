@@ -112,14 +112,55 @@ export const newsItems = [
 ] as const;
 
 export const coreValues = [
-  "Excellence",
-  "Innovation",
-  "Integrity",
-  "Accessibility",
-  "Lifelong Learning",
-  "Leadership",
-  "Inclusivity",
-  "Sustainability",
+  {
+    title: "Excellence",
+    image: "/images/campus/pupils-studying.jpg",
+    alt: "Young students focused on their notebooks during class",
+    blurb: "Careful work, high standards, and pride in every assignment.",
+  },
+  {
+    title: "Innovation",
+    image: "/images/campus/pupil-online-class.jpg",
+    alt: "A pupil learning through a digital classroom session",
+    blurb: "New tools and ideas that keep learning fresh and useful.",
+  },
+  {
+    title: "Integrity",
+    image: "/images/campus/pupil-deskwork.jpg",
+    alt: "A student working carefully at a desk",
+    blurb: "Honest effort and character that hold up when no one is watching.",
+  },
+  {
+    title: "Accessibility",
+    image: "/images/campus/pupil-backpack.jpg",
+    alt: "A young learner with a backpack ready for school",
+    blurb: "Pathways open to students wherever they begin.",
+  },
+  {
+    title: "Lifelong Learning",
+    image: "/images/campus/pupil-reading.jpg",
+    alt: "A pupil absorbed in reading",
+    blurb: "Curiosity that continues long after the lesson ends.",
+  },
+  {
+    title: "Leadership",
+    image: "/images/campus/pupil-classroom.jpg",
+    alt: "A student stepping up at the classroom board",
+    blurb: "Confidence to guide peers and take responsibility.",
+  },
+  {
+    title: "Inclusivity",
+    image: "/images/campus/pupils-lunch.jpg",
+    alt: "Students sharing a warm moment together at lunch",
+    blurb: "Every learner belongs in the circle of the classroom.",
+  },
+  {
+    title: "Sustainability",
+    image: "/images/campus/pupils-studying.jpg",
+    alt: "Students building study habits that last beyond a single term",
+    blurb: "Habits and systems that serve learners for the long run.",
+    imageClassName: "object-[center_80%]",
+  },
 ] as const;
 
 export const secondaryLevels = {
