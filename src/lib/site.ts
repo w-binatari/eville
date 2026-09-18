@@ -166,20 +166,76 @@ export const coreValues = [
 export const secondaryLevels = {
   junior: ["JSS1", "JSS2", "JSS3"],
   senior: ["SS1", "SS2", "SS3"],
-  subjects: [
-    "Mathematics",
-    "English Language",
-    "Physics",
-    "Chemistry",
-    "Biology",
-    "Economics",
-    "Literature",
-    "Government",
-    "Civic Education",
-    "Agricultural Science",
-    "Computer Studies",
-  ],
 };
+
+export const secondarySubjects = [
+  {
+    title: "Mathematics",
+    image: "/images/subjects/mathematics.jpg",
+    alt: "Chalkboard dense with mathematical formulas and diagrams",
+    blurb: "Numbers, proofs, and patterns that sharpen precise thinking.",
+  },
+  {
+    title: "English Language",
+    image: "/images/subjects/english.jpg",
+    alt: "Warmly lit library aisle lined with books",
+    blurb: "Reading, writing, and speaking with clarity and confidence.",
+  },
+  {
+    title: "Physics",
+    image: "/images/subjects/physics.jpg",
+    alt: "Plasma globe showing electric filaments of light",
+    blurb: "Forces, energy, and the laws that move the physical world.",
+  },
+  {
+    title: "Chemistry",
+    image: "/images/subjects/chemistry.jpg",
+    alt: "Laboratory glassware with beakers and a pipette",
+    blurb: "Matter, reactions, and careful experimental practice.",
+  },
+  {
+    title: "Biology",
+    image: "/images/subjects/biology.jpg",
+    alt: "Anatomical heart model used for life-science study",
+    blurb: "Living systems—from cells to organisms—made understandable.",
+  },
+  {
+    title: "Economics",
+    image: "/images/subjects/economics.jpg",
+    alt: "Financial market chart showing price trends",
+    blurb: "How markets, choices, and resources shape everyday life.",
+  },
+  {
+    title: "Literature",
+    image: "/images/subjects/literature.jpg",
+    alt: "Close-up of book pages lined on a shelf",
+    blurb: "Stories and texts that deepen empathy and critical reading.",
+  },
+  {
+    title: "Government",
+    image: "/images/subjects/government.jpg",
+    alt: "Statue of Lady Justice holding balanced scales",
+    blurb: "Institutions, power, and the frameworks that guide society.",
+  },
+  {
+    title: "Civic Education",
+    image: "/images/subjects/civic.jpg",
+    alt: "Hands stacked together in a circle of shared purpose",
+    blurb: "Rights, responsibility, and participation in community life.",
+  },
+  {
+    title: "Agricultural Science",
+    image: "/images/subjects/agriculture.jpg",
+    alt: "Young maize plants growing in fertile soil",
+    blurb: "Crops, soil, and sustainable food systems for the future.",
+  },
+  {
+    title: "Computer Studies",
+    image: "/images/subjects/computer.jpg",
+    alt: "Laptop open to a code editor on a clean desk",
+    blurb: "Computing skills for a connected, digital world.",
+  },
+] as const;
 
 export const diplomaPrograms = [
   "Data Science",

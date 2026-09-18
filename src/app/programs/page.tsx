@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/layout/page-hero";
+import { SubjectsReveal } from "@/components/programs/subjects-reveal";
 import { ButtonLink } from "@/components/ui/button-link";
 import {
   degreePathways,
@@ -60,13 +61,10 @@ export default function ProgramsPage() {
         </div>
 
         <h3 className="mt-14 text-lg font-medium text-navy">Subjects</h3>
-        <ul className="mt-4 columns-1 gap-x-12 sm:columns-2 lg:columns-3">
-          {secondaryLevels.subjects.map((subject) => (
-            <li key={subject} className="break-inside-avoid border-b border-line py-2.5 text-sm text-muted">
-              {subject}
-            </li>
-          ))}
-        </ul>
+        <p className="mt-2 max-w-xl text-[15px] leading-relaxed text-muted">
+          Hover or tap a subject to see the world it opens into.
+        </p>
+        <SubjectsReveal />
       </section>
 
       <section id="tertiary" className="scroll-mt-28 border-y border-line ">
