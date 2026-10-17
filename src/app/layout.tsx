@@ -20,10 +20,15 @@ export const metadata: Metadata = {
   },
   description: site.description,
   metadataBase: new URL("https://herockeville.com"),
+  icons: {
+    icon: [{ url: "/brand/logo.png", type: "image/png" }],
+    apple: [{ url: "/brand/logo.png", type: "image/png" }],
+  },
   openGraph: {
     title: site.name,
     description: site.description,
     type: "website",
+    images: [{ url: "/brand/logo.png" }],
   },
 };
 
