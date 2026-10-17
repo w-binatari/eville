@@ -9,8 +9,8 @@ export const site = {
   email: "herockevilleacademya@gmail.com",
   supportEmail: "herockevilleacademya@gmail.com",
   portalUrl: "https://portal.herockeville.com/login",
-  phone: "+234 800 000 0000",
-  whatsapp: "+234 800 000 0000",
+  phone: "+234 075 0998",
+  whatsapp: "+234 075 0998",
   address: "Online Campus: Serving learners worldwide",
   socials: {
     facebook: "#",
