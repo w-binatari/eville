@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { cn } from "@/lib/utils";
+import { cn, isExternalHref } from "@/lib/utils";
 
 type ButtonProps = {
   href: string;
@@ -30,17 +30,29 @@ export function ButtonLink({
   size = "md",
   className,
 }: ButtonProps) {
+  const classes = cn(
+    "inline-flex items-center justify-center gap-2 font-serif tracking-wide transition-colors duration-200",
+    variants[variant],
+    variant !== "text" && sizes[size],
+    variant === "text" && "text-sm",
+    className,
+  );
+
+  if (isExternalHref(href)) {
+    const openInNewTab = href.startsWith("http");
+    return (
+      <a
+        href={href}
+        className={classes}
+        {...(openInNewTab ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+      >
+        {children}
+      </a>
+    );
+  }
+
   return (
-    <Link
-      href={href}
-      className={cn(
-        "inline-flex items-center justify-center gap-2 font-serif tracking-wide transition-colors duration-200",
-        variants[variant],
-        variant !== "text" && sizes[size],
-        variant === "text" && "text-sm",
-        className,
-      )}
-    >
+    <Link href={href} className={classes}>
       {children}
     </Link>
   );

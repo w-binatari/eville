@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/layout/page-hero";
 import { ButtonLink } from "@/components/ui/button-link";
+import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "E-Learning Portal",
@@ -24,9 +25,9 @@ export default function ELearningPage() {
       <PageHero
         eyebrow="E-Learning Portal"
         title="Your campus, wherever you are"
-        description="The student and parent portals will connect to our Moodle learning platform for courses, live classes, assessments, and certificates."
-        ctaHref="/admissions"
-        ctaLabel="Apply for Access"
+        description="Sign in to the HEROCK E-VILLE learning platform for courses, live classes, assessments, and certificates."
+        ctaHref={site.portalUrl}
+        ctaLabel="Open Portal Login"
       />
 
       <section className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
@@ -47,19 +48,22 @@ export default function ELearningPage() {
             <div className="rounded-lg bg-navy p-6 text-white">
               <h3 className="text-lg font-semibold">Student Login</h3>
               <p className="mt-2 text-sm text-white/70">
-                Portal launch is in progress. Enrolled students will receive credentials after
-                admissions confirmation.
+                Access your courses, live classrooms, assignments, and grades on the live learning
+                portal.
               </p>
-              <ButtonLink href="/contact" className="mt-5">
-                Contact Admissions
+              <ButtonLink href={site.portalUrl} className="mt-5">
+                Go to Portal
               </ButtonLink>
             </div>
             <div className="border border-line bg-surface-raised p-6">
               <h3 className="text-lg font-semibold text-navy">Parent Portal</h3>
               <p className="mt-2 text-sm text-muted">
-                Parents of secondary learners will be able to track performance, attendance, fee
-                status, and communicate with teachers.
+                Parents of secondary learners can track performance, attendance, fee status, and
+                communicate with teachers through the same portal login.
               </p>
+              <ButtonLink href={site.portalUrl} variant="outline" className="mt-5">
+                Parent Login
+              </ButtonLink>
             </div>
           </div>
         </div>

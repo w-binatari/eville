@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { mainNav } from "@/lib/site";
-import { cn } from "@/lib/utils";
+import { cn, isExternalHref } from "@/lib/utils";
 
 const primaryNav = mainNav.filter((item) =>
   ["/", "/about", "/programs", "/admissions", "/contact"].includes(item.href),
@@ -106,19 +106,36 @@ export function SiteHeader() {
       {open && (
         <nav className="border-t border-line px-4 py-4 lg:hidden">
           <div className="flex flex-col gap-1">
-            {[...primaryNav, ...moreNav].map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                onClick={() => setOpen(false)}
-                className={cn(
-                  "py-2.5 text-sm",
-                  pathname === item.href ? "text-orange" : "text-ink",
-                )}
-              >
-                {item.label}
-              </Link>
-            ))}
+            {[...primaryNav, ...moreNav].map((item) => {
+              const className = cn(
+                "py-2.5 text-sm",
+                pathname === item.href ? "text-orange" : "text-ink",
+              );
+              if (isExternalHref(item.href)) {
+                return (
+                  <a
+                    key={item.href}
+                    href={item.href}
+                    onClick={() => setOpen(false)}
+                    className={className}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {item.label}
+                  </a>
+                );
+              }
+              return (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setOpen(false)}
+                  className={className}
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
           </div>
         </nav>
       )}

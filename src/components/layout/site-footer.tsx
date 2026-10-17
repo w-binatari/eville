@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { Logo } from "@/components/layout/logo";
 import { mainNav, site } from "@/lib/site";
+import { isExternalHref } from "@/lib/utils";
 
 const secondary = [
-  { label: "E-Learning", href: "/e-learning" },
+  { label: "E-Learning", href: site.portalUrl },
   { label: "E-Library", href: "/e-library" },
   { label: "News", href: "/news" },
   { label: "Events", href: "/events" },
@@ -17,6 +18,26 @@ const legal = [
   { label: "Refunds", href: "/refund" },
   { label: "Cookies", href: "/cookies" },
 ];
+
+function FooterLink({ href, children }: { href: string; children: React.ReactNode }) {
+  const className = "transition hover:text-orange";
+  if (isExternalHref(href)) {
+    return (
+      <a
+        href={href}
+        className={className}
+        {...(href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+      >
+        {children}
+      </a>
+    );
+  }
+  return (
+    <Link href={href} className={className}>
+      {children}
+    </Link>
+  );
+}
 
 export function SiteFooter() {
   return (
@@ -41,9 +62,7 @@ export function SiteFooter() {
                 )
                 .map((item) => (
                   <li key={item.href}>
-                    <Link href={item.href} className="transition hover:text-orange">
-                      {item.label}
-                    </Link>
+                    <FooterLink href={item.href}>{item.label}</FooterLink>
                   </li>
                 ))}
             </ul>
@@ -54,9 +73,7 @@ export function SiteFooter() {
             <ul className="mt-4 space-y-2.5 text-sm text-ink/75">
               {secondary.map((item) => (
                 <li key={item.href}>
-                  <Link href={item.href} className="transition hover:text-orange">
-                    {item.label}
-                  </Link>
+                  <FooterLink href={item.href}>{item.label}</FooterLink>
                 </li>
               ))}
             </ul>
@@ -80,9 +97,7 @@ export function SiteFooter() {
           <ul className="flex flex-wrap gap-4">
             {legal.map((item) => (
               <li key={item.href}>
-                <Link href={item.href} className="transition hover:text-orange">
-                  {item.label}
-                </Link>
+                <FooterLink href={item.href}>{item.label}</FooterLink>
               </li>
             ))}
           </ul>

@@ -6,8 +6,9 @@ export const site = {
   logoTagline: "innovative learning for excellence",
   description:
     "A dynamic online learning institution committed to transforming education through innovation, accessibility, and excellence for secondary and tertiary students.",
-  email: "admissions@herockeville.com",
-  supportEmail: "support@herockeville.com",
+  email: "herockevilleacademya@gmail.com",
+  supportEmail: "herockevilleacademya@gmail.com",
+  portalUrl: "https://portal.herockeville.com/login",
   phone: "+234 800 000 0000",
   whatsapp: "+234 800 000 0000",
   address: "Online Campus: Serving learners worldwide",
@@ -25,7 +26,7 @@ export const mainNav = [
   { label: "About Us", href: "/about" },
   { label: "Programs", href: "/programs" },
   { label: "Admissions", href: "/admissions" },
-  { label: "E-Learning Portal", href: "/e-learning" },
+  { label: "E-Learning Portal", href: site.portalUrl },
   { label: "E-Library", href: "/e-library" },
   { label: "News & Blog", href: "/news" },
   { label: "Events", href: "/events" },
@@ -78,8 +79,8 @@ export const stats = [
 ] as const;
 
 export const quickAccess = [
-  { label: "Student Portal", href: "/e-learning", tone: "navy" as const },
-  { label: "Parent Portal", href: "/e-learning#parents", tone: "orange" as const },
+  { label: "Student Portal", href: site.portalUrl, tone: "navy" as const },
+  { label: "Parent Portal", href: site.portalUrl, tone: "orange" as const },
   { label: "E-Library", href: "/e-library", tone: "navy" as const },
   { label: "Apply Now", href: "/admissions", tone: "orange" as const },
   { label: "Certificate Verify", href: "/certificates", tone: "navy" as const },
