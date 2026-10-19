@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
-import { mainNav } from "@/lib/site";
+import { mainNav, site } from "@/lib/site";
 import { cn, isExternalHref } from "@/lib/utils";
 
 const primaryNav = mainNav.filter((item) =>
@@ -91,15 +91,17 @@ export function SiteHeader() {
         </Link>
 
         <div className="col-start-3 justify-self-end">
-          <Link
-            href="/admissions"
+          <a
+            href={site.portalUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-[13px] tracking-wide text-ink transition hover:text-orange"
           >
             Apply
             <span className="inline-flex h-7 w-7 items-center justify-center border border-orange/50 text-sm leading-none text-orange">
               →
             </span>
-          </Link>
+          </a>
         </div>
       </div>
 

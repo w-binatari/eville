@@ -7,6 +7,7 @@ import {
   degreePathways,
   diplomaPrograms,
   secondaryLevels,
+  site,
 } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -22,7 +23,7 @@ export default function ProgramsPage() {
         eyebrow="Programs"
         title="Pathways for every stage of learning"
         description="From Junior Secondary to professional certification, structured programs with expert instruction and flexible online delivery."
-        ctaHref="/admissions"
+        ctaHref={site.portalUrl}
         ctaLabel="Apply now"
       />
 

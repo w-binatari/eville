@@ -15,7 +15,7 @@ export default function AboutPage() {
         eyebrow="About"
         title="A community of learners, not just a platform"
         description="HEROCK E-VILLE ACADEMY exists to make rigorous education reachable for secondary students, tertiary learners, and working professionals."
-        ctaHref="/admissions"
+        ctaHref={site.portalUrl}
         ctaLabel="Start your application"
       />
 

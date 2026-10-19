@@ -82,7 +82,7 @@ export const quickAccess = [
   { label: "Student Portal", href: site.portalUrl, tone: "navy" as const },
   { label: "Parent Portal", href: site.portalUrl, tone: "orange" as const },
   { label: "E-Library", href: "/e-library", tone: "navy" as const },
-  { label: "Apply Now", href: "/admissions", tone: "orange" as const },
+  { label: "Apply Now", href: site.portalUrl, tone: "orange" as const },
   { label: "Certificate Verify", href: "/certificates", tone: "navy" as const },
   { label: "Careers", href: "/careers", tone: "orange" as const },
 ] as const;
