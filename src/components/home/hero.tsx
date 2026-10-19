@@ -55,7 +55,7 @@ export function Hero() {
           rel="noopener noreferrer"
           className="absolute bottom-8 left-4 bg-orange px-5 py-3 text-sm tracking-wide text-white transition hover:bg-orange-hover sm:bottom-12 sm:left-8 sm:px-6 sm:py-3.5"
         >
-          Begin your application
+          Apply / Sign up
         </a>
 
         <Link

@@ -97,7 +97,7 @@ export function SiteHeader() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-[13px] tracking-wide text-ink transition hover:text-orange"
           >
-            Apply
+            Apply / Register
             <span className="inline-flex h-7 w-7 items-center justify-center border border-orange/50 text-sm leading-none text-orange">
               →
             </span>

@@ -14,7 +14,7 @@ export function ClosingCta() {
           secondary school, there is a place for you here.
         </p>
         <div className="mt-10 flex flex-wrap gap-4">
-          <ButtonLink href={site.portalUrl}>Apply now</ButtonLink>
+          <ButtonLink href={site.portalUrl}>Apply / Register</ButtonLink>
           <ButtonLink href="/contact" variant="outline">
             Talk to admissions
           </ButtonLink>

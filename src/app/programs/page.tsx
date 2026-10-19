@@ -24,7 +24,7 @@ export default function ProgramsPage() {
         title="Pathways for every stage of learning"
         description="From Junior Secondary to professional certification, structured programs with expert instruction and flexible online delivery."
         ctaHref={site.portalUrl}
-        ctaLabel="Apply now"
+        ctaLabel="Apply / Register"
       />
 
       <section id="secondary" className="mx-auto max-w-6xl scroll-mt-28 px-4 py-16 sm:px-6 lg:py-20">
