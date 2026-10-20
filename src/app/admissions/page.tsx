@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/layout/page-hero";
 import { ButtonLink } from "@/components/ui/button-link";
-import { admissionFaqs } from "@/lib/site";
+import { admissionFaqs, site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Admissions",
@@ -23,8 +23,8 @@ export default function AdmissionsPage() {
         eyebrow="Admissions"
         title="Begin your journey with Herock E-Ville"
         description="Flexible entry for secondary and tertiary learners. Apply online and start learning from anywhere."
-        ctaHref="/contact"
-        ctaLabel="Request guidance"
+        ctaHref={site.portalUrl}
+        ctaLabel="Apply"
       />
 
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:py-20">
@@ -65,8 +65,8 @@ export default function AdmissionsPage() {
                 </li>
               ))}
             </ol>
-            <ButtonLink href="/contact" className="mt-8">
-              Start application
+            <ButtonLink href={site.portalUrl} className="mt-8">
+              Apply / Register
             </ButtonLink>
           </div>
         </div>

@@ -16,7 +16,7 @@ export function ClosingCta() {
         <div className="mt-10 flex flex-wrap gap-4">
           <ButtonLink href={site.portalUrl}>Apply / Register</ButtonLink>
           <ButtonLink href="/contact" variant="outline">
-            Talk to admissions
+            Contact us
           </ButtonLink>
         </div>
       </div>

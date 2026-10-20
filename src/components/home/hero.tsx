@@ -94,12 +94,14 @@ export function Hero() {
             >
               Our story
             </Link>
-            <Link
-              href="/contact"
+            <a
+              href={site.portalUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-orange px-5 py-2.5 text-sm tracking-wide text-white transition hover:bg-orange-hover"
             >
-              Talk to admissions
-            </Link>
+              Apply / Register
+            </a>
           </div>
         </div>
       </div>
